@@ -1,13 +1,16 @@
 <script>
   export let disableShadow = false;
+  export let disabled = false;
   export let variant = "";
 </script>
 
 <button
   class="default"
   class:disableShadow
+  class:disabled
   class:outline={variant === "outline"}
   class:text={variant === "text"}
+  disabled
 >
   <slot name="icon" />
   <slot name="title">Defalt</slot>
@@ -29,6 +32,10 @@
     box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
     border-radius: 6px;
   }
+  .disabled {
+    @apply shadow-none;
+    color: hsla(0, 0%, 62%, 1);
+  }
   .disableShadow {
     @apply text-white bg-blue-600 shadow-none;
   }
@@ -37,5 +44,8 @@
   }
   .text {
     @apply border-0 text-blue-600 bg-white outline-none shadow-none;
+  }
+  .disabled.text {
+    color: hsla(0, 0%, 62%, 1) !important;
   }
 </style>

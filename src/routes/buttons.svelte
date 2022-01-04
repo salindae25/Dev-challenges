@@ -51,5 +51,18 @@
       </div>
       <Button disableShadow />
     </article>
+    <article class="flex flex-col gap-2" />
+    <article class="flex flex-col gap-2">
+      <div class="font-Poppins text-xs">
+        {"<Button disabled />"}
+      </div>
+      <Button disabled />
+    </article>
+    <article class="flex flex-col gap-2">
+      <div class="font-Poppins text-xs">
+        {"<Button variant='text' disabled />"}
+      </div>
+      <Button variant="text" disabled />
+    </article>
   </div>
 </div>
