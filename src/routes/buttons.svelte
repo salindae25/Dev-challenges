@@ -64,5 +64,42 @@
       </div>
       <Button variant="text" disabled />
     </article>
+
+    <article class="flex flex-col gap-2">
+      <div class="font-Poppins text-xs">
+        {" <Button startIcon='local_grocery_store' />"}
+      </div>
+      <Button startIcon="local_grocery_store" />
+    </article>
+    <article class="flex flex-col gap-2">
+      <div class="font-Poppins text-xs">
+        {" <Button endIcon='local_grocery_store' />"}
+      </div>
+      <Button endIcon="local_grocery_store" />
+    </article>
+    <article class="flex flex-col gap-2">
+      <div class="font-Poppins text-xs">
+        {" <Button variant='text' startIcon='local_grocery_store' />"}
+      </div>
+      <Button variant="text" startIcon="local_grocery_store" />
+    </article>
+    <article class="flex flex-col gap-2">
+      <div class="font-Poppins text-xs">
+        {" <Button variant='text' endIcon='local_grocery_store' />"}
+      </div>
+      <Button variant="text" endIcon="local_grocery_store" />
+    </article>
+    <article class="flex flex-col gap-2">
+      <div class="font-Poppins text-xs">
+        {" <Button variant='outline' startIcon='local_grocery_store' />"}
+      </div>
+      <Button variant="outline" startIcon="local_grocery_store" />
+    </article>
+    <article class="flex flex-col gap-2">
+      <div class="font-Poppins text-xs">
+        {" <Button variant='outline' endIcon='local_grocery_store' />"}
+      </div>
+      <Button variant="outline" endIcon="local_grocery_store" />
+    </article>
   </div>
 </div>

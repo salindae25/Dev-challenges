@@ -2,6 +2,9 @@
   export let disableShadow = false;
   export let disabled = false;
   export let variant = "";
+  export let startIcon = "";
+  export let endIcon = "";
+  export let title = "Defalt";
 </script>
 
 <button
@@ -12,32 +15,37 @@
   class:text={variant === "text"}
   disabled
 >
-  <slot name="icon" />
-  <slot name="title">Defalt</slot>
+  {#if startIcon !== ""}
+    <span class="material-icons w-3 text-base leading-4"> {startIcon} </span>
+  {/if}
+  <span>{title}</span>
+  {#if endIcon !== ""}
+    <span class="material-icons  w-3 text-base leading-4"> {endIcon} </span>
+  {/if}
 </button>
 
 <style>
   .default {
-    width: 81px;
-    height: 36px;
+    min-width: 81px;
+    min-height: 36px;
     font-family: Noto Sans JP;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-
-    color: #3f3f3f;
-    background: #e0e0e0;
+    padding: 8px 20px;
     box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
     border-radius: 6px;
+    @apply flex items-center justify-center gap-2 text-white bg-blue-600 self-start;
   }
   .disabled {
     @apply shadow-none;
+    background-color: hsla(0, 0%, 88%, 1);
     color: hsla(0, 0%, 62%, 1);
   }
   .disableShadow {
-    @apply text-white bg-blue-600 shadow-none;
+    @apply shadow-none;
   }
   .outline {
     @apply border border-blue-600 text-blue-600 bg-white outline-none;

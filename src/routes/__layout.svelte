@@ -2,8 +2,10 @@
   import "../app.css";
 </script>
 
-<main class="w-screen flex  h-screen">
-  <div class="flex flex-col w-[237px] bg-nav-bg pl-[56px] pt-[48px] h-screen">
+<main class="w-screen min-h-screen flex ">
+  <div
+    class="flex flex-col w-[237px] bg-nav-bg pl-[56px] pt-[48px] min-h-screen"
+  >
     <div class="font-Poppins font-semibold">
       <span class="text-red-500">Dev</span>challenges.io
     </div>
@@ -17,7 +19,7 @@
       <li>Inputs</li>
     </ul>
   </div>
-  <div class="pt-[54px] px-[92px]">
+  <div class="pt-[54px] px-[92px] pb-10">
     <slot />
   </div>
 </main>
