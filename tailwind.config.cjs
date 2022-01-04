@@ -1,7 +1,7 @@
 const config = {
   mode: "jit",
   content: ["./src/**/*.{html,js,svelte,ts}"],
-
+  important: true,
   theme: {
     extend: {
       colors: {
@@ -10,6 +10,7 @@ const config = {
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
         "Noto-sans": ["Noto Sans JP", "sans-serif"],
+        "ubuntu-mono": ["Ubuntu Mono", "sans-serif"],
       },
     },
   },
