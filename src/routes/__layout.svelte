@@ -1,0 +1,30 @@
+<script lang="ts">
+  import "../app.css";
+</script>
+
+<main class="w-screen flex  h-screen">
+  <div class="flex flex-col w-[237px] bg-nav-bg pl-[56px] pt-[48px] h-screen">
+    <div class="font-Poppins font-semibold">
+      <span class="text-red-500">Dev</span>challenges.io
+    </div>
+    <ul
+      class="mt-[122px] font-Noto-sans text-gray-400 text-sm flex flex-col gap-7"
+    >
+      <li>Colors</li>
+      <li>Typography</li>
+      <li>Spaces</li>
+      <li class="text-black">Buttons</li>
+      <li>Inputs</li>
+    </ul>
+  </div>
+  <div class="pt-[54px] px-[92px]">
+    <slot />
+  </div>
+</main>
+
+<footer>
+  <p />
+</footer>
+
+<style>
+</style>
