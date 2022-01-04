@@ -102,4 +102,24 @@
       <Button variant="outline" endIcon="local_grocery_store" />
     </article>
   </div>
+  <div class="grid grid-cols-3 mt-7 gap-y-12 gap-x-12 justify-between">
+    <article class="flex flex-col gap-2">
+      <div class="font-Poppins text-xs">
+        {`<Button size="sm"/>`}
+      </div>
+      <Button size="sm" />
+    </article>
+    <article class="flex flex-col gap-2">
+      <div class="font-Poppins text-xs">
+        {`<Button  size="md"/>`}
+      </div>
+      <Button size="md" />
+    </article>
+    <article class="flex flex-col gap-2">
+      <div class="font-Poppins text-xs">
+        {`<Button size="lg"/>`}
+      </div>
+      <Button size="lg" />
+    </article>
+  </div>
 </div>
