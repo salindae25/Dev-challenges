@@ -5,7 +5,7 @@
 
 <button
   class="default"
-  class:disable={disableShadow}
+  class:disableShadow
   class:outline={variant === "outline"}
   class:text={variant === "text"}
 >
@@ -29,8 +29,8 @@
     box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
     border-radius: 6px;
   }
-  .disable {
-    @apply text-white bg-blue-600;
+  .disableShadow {
+    @apply text-white bg-blue-600 shadow-none;
   }
   .outline {
     @apply border border-blue-600 text-blue-600 bg-white outline-none;
