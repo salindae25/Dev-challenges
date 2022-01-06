@@ -80,4 +80,26 @@
       <Input endIcon="lock" />
     </article>
   </div>
+  <div class="grid grid-flow-col mt-7 gap-y-12 gap-x-12 justify-between">
+    <article class="flex flex-col gap-2">
+      <div class="font-ubuntu-mono text-xs">
+        {`<Input value="Text" />`}
+      </div>
+      <Input value="Text" />
+    </article>
+  </div>
+  <div class="grid grid-flow-col mt-7 gap-y-12 gap-x-12 justify-between">
+    <article class="flex flex-col gap-2">
+      <div class="font-ubuntu-mono text-xs">
+        {`<Input  size="sm" />`}
+      </div>
+      <Input />
+    </article>
+    <article class="flex flex-col gap-2">
+      <div class="font-ubuntu-mono text-xs">
+        {`<Input  size="md" />`}
+      </div>
+      <Input size="sm" />
+    </article>
+  </div>
 </div>

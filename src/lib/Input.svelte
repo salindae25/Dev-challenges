@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Button from "$lib/Button.svelte";
   import { uuid } from "$lib/Util";
 
   export let error = false;
@@ -10,23 +9,28 @@
   export let helperText = "";
   export let startIcon = "";
   export let endIcon = "";
+  export let value = "";
   export let placeholder = "Placeholder";
   export let id = `input-${uuid()}`;
+  export let size = "md";
 </script>
 
 <div class="container relative">
   <span class="help-text" class:error>{helperText}</span>
   <input
     {id}
-    class="default pl-3 py-[18px] mt-1 placeholder:text-[#828282] font-Noto-sans font-medium"
+    class="default  mt-1 placeholder:text-[#828282] font-Noto-sans font-medium outline-none"
     class:hover
     class:focus
     class:error
     class:disabled
     class:pl-10={startIcon !== ""}
     class:pr-10={endIcon !== ""}
+    class:size-md={size === "md"}
+    class:size-sm={size === "sm"}
     {placeholder}
     {disabled}
+    {value}
   />
   {#if startIcon !== ""}
     <span class="material-icons start__icon"> {startIcon} </span>
@@ -43,7 +47,7 @@
   }
   .start__icon,
   .end__icon {
-    @apply w-5 text-2xl leading-4 absolute top-12;
+    @apply w-5 text-2xl leading-4 absolute top-12 text-[#828282];
   }
   .start__icon {
     @apply left-2;
@@ -90,7 +94,14 @@
         color: #2962ff;
       }
     }
+    &.size-sm {
+      @apply pl-3 py-[10px];
+    }
+    &.size-md {
+      @apply pl-3 py-[18px];
+    }
   }
+
   .error {
     border-color: #d32f2f;
     & ~ label {
