@@ -14,7 +14,7 @@
   export let value = "";
   export let placeholder = "Placeholder";
   export let id = `input-${uuid()}`;
-  export let size = "md";
+  export let inputSize = "md";
   export let row = "4";
 </script>
 
@@ -30,12 +30,13 @@
       class:disabled
       class:pl-10={startIcon !== ""}
       class:pr-10={endIcon !== ""}
-      class:size-md={size === "md"}
-      class:size-sm={size === "sm"}
+      class:size-md={inputSize === "md"}
+      class:size-sm={inputSize === "sm"}
       class:w-full={fullWidth}
       {placeholder}
       {disabled}
       {value}
+      {...$$props}
     />
   {:else}
     ​<textarea
@@ -47,13 +48,14 @@
       class:disabled
       class:pl-10={startIcon !== ""}
       class:pr-10={endIcon !== ""}
-      class:size-md={size === "md"}
-      class:size-sm={size === "sm"}
+      class:size-md={inputSize === "md"}
+      class:size-sm={inputSize === "sm"}
       class:w-full={fullWidth}
       {placeholder}
       {disabled}
       {value}
       rows={parseInt(row)}
+      {...$$props}
     />
   {/if}
   {#if startIcon !== ""}

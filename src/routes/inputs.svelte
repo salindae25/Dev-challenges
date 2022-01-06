@@ -91,15 +91,15 @@
   <div class="grid grid-flow-col mt-7 gap-y-12 gap-x-12 justify-between">
     <article class="flex flex-col gap-2">
       <div class="font-ubuntu-mono text-xs">
-        {`<Input  size="sm" />`}
+        {`<Input  inputSize="sm" />`}
       </div>
-      <Input />
+      <Input inputSize="sm" />
     </article>
     <article class="flex flex-col gap-2">
       <div class="font-ubuntu-mono text-xs">
-        {`<Input  size="md" />`}
+        {`<Input  inputSize="md" />`}
       </div>
-      <Input size="sm" />
+      <Input inputSize="md" />
     </article>
   </div>
   <div class="grid grid-flow-col mt-7 gap-y-12 gap-x-12  w-full ">
@@ -117,5 +117,10 @@
       </div>
       <Input multiline row="4" />
     </article>
+  </div>
+  <div class="grid grid-flow-col mt-7 gap-y-12 gap-x-12 justify-between">
+    <span class="text-gray-500"
+      >created by <b>salindae25</b> - devChallenge</span
+    >
   </div>
 </div>
