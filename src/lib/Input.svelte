@@ -8,11 +8,13 @@
   export let disabled = false;
   export let label = "Label";
   export let helperText = "";
+  export let startIcon = "";
+  export let endIcon = "";
   export let placeholder = "Placeholder";
   export let id = `input-${uuid()}`;
 </script>
 
-<div class="container">
+<div class="container relative">
   <span class="help-text" class:error>{helperText}</span>
   <input
     {id}
@@ -21,15 +23,33 @@
     class:focus
     class:error
     class:disabled
+    class:pl-10={startIcon !== ""}
+    class:pr-10={endIcon !== ""}
     {placeholder}
     {disabled}
   />
+  {#if startIcon !== ""}
+    <span class="material-icons start__icon"> {startIcon} </span>
+  {/if}
+  {#if endIcon !== ""}
+    <span class="material-icons  end__icon"> {endIcon} </span>
+  {/if}
   <label for={id}>{label}</label>
 </div>
 
 <style lang="scss">
   .container {
     @apply flex flex-col-reverse;
+  }
+  .start__icon,
+  .end__icon {
+    @apply w-5 text-2xl leading-4 absolute top-12;
+  }
+  .start__icon {
+    @apply left-2;
+  }
+  .end__icon {
+    @apply right-3;
   }
   .help-text {
     margin-top: 4px;
@@ -54,7 +74,9 @@
     &.hover,
     &:hover {
       @apply border-[#333333];
-      & ~ label {
+      & ~ label,
+      & ~ .start__icon,
+      & ~ .end__icon {
         color: #333333;
       }
     }
@@ -62,7 +84,9 @@
     &.focus,
     &:focus {
       @apply border-[#2962FF];
-      & ~ label {
+      & ~ label,
+      & ~ .start__icon,
+      & ~ .end__icon {
         color: #2962ff;
       }
     }
@@ -76,7 +100,9 @@
     &.hover,
     &:hover {
       @apply border-[#333333];
-      & ~ label {
+      & ~ label,
+      & ~ .start__icon,
+      & ~ .end__icon {
         color: #333333;
       }
     }
@@ -84,7 +110,9 @@
     &.focus,
     &:focus {
       @apply border-[#D32F2F];
-      & ~ label {
+      & ~ label,
+      & ~ .start__icon,
+      & ~ .end__icon {
         color: #d32f2f;
       }
     }

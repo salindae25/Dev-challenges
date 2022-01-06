@@ -66,4 +66,18 @@
       <Input helperText="Some interesting text" error />
     </article>
   </div>
+  <div class="grid grid-flow-col mt-7 gap-y-12 gap-x-12 justify-between">
+    <article class="flex flex-col gap-2">
+      <div class="font-ubuntu-mono text-xs">
+        {`<Input  startIcon />`}
+      </div>
+      <Input startIcon="phone" />
+    </article>
+    <article class="flex flex-col gap-2">
+      <div class="font-ubuntu-mono text-xs">
+        {`<Input  endIcon />`}
+      </div>
+      <Input endIcon="lock" />
+    </article>
+  </div>
 </div>
