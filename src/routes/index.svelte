@@ -1,18 +1,26 @@
 <script context="module" lang="ts">
-	export const prerender = true;
+  export const prerender = true;
 </script>
 
 <script lang="ts">
 </script>
 
 <svelte:head>
-	<title>Home</title>
+  <title>Home</title>
 </svelte:head>
 
-<div>
-Go to buttons <a href="/buttons">Buttons</a>
+<div class="flex flex-col gap-4">
+  <span
+    >Go to buttons <a href="/buttons" class="font-bold underline cursor-pointer"
+      >Buttons</a
+    ></span
+  >
+  <span
+    >Go to inputs <a href="/inputs" class="font-bold underline cursor-pointer"
+      >Inputs</a
+    ></span
+  >
 </div>
 
 <style>
-	
 </style>
