@@ -6,6 +6,7 @@
   export let focus = false;
   export let disabled = false;
   export let fullWidth = false;
+  export let multiline = false;
   export let label = "Label";
   export let helperText = "";
   export let startIcon = "";
@@ -14,26 +15,47 @@
   export let placeholder = "Placeholder";
   export let id = `input-${uuid()}`;
   export let size = "md";
+  export let row = "4";
 </script>
 
 <div class="container relative" class:w-full={fullWidth}>
   <span class="help-text" class:error>{helperText}</span>
-  <input
-    {id}
-    class="default  mt-1 placeholder:text-[#828282] font-Noto-sans font-medium outline-none"
-    class:hover
-    class:focus
-    class:error
-    class:disabled
-    class:pl-10={startIcon !== ""}
-    class:pr-10={endIcon !== ""}
-    class:size-md={size === "md"}
-    class:size-sm={size === "sm"}
-    class:w-full={fullWidth}
-    {placeholder}
-    {disabled}
-    {value}
-  />
+  {#if !multiline}
+    <input
+      {id}
+      class="default  mt-1 placeholder:text-[#828282] font-Noto-sans font-medium outline-none"
+      class:hover
+      class:focus
+      class:error
+      class:disabled
+      class:pl-10={startIcon !== ""}
+      class:pr-10={endIcon !== ""}
+      class:size-md={size === "md"}
+      class:size-sm={size === "sm"}
+      class:w-full={fullWidth}
+      {placeholder}
+      {disabled}
+      {value}
+    />
+  {:else}
+    ​<textarea
+      {id}
+      class="default  mt-1 placeholder:text-[#828282] font-Noto-sans font-medium outline-none resize-none"
+      class:hover
+      class:focus
+      class:error
+      class:disabled
+      class:pl-10={startIcon !== ""}
+      class:pr-10={endIcon !== ""}
+      class:size-md={size === "md"}
+      class:size-sm={size === "sm"}
+      class:w-full={fullWidth}
+      {placeholder}
+      {disabled}
+      {value}
+      rows={parseInt(row)}
+    />
+  {/if}
   {#if startIcon !== ""}
     <span class="material-icons start__icon"> {startIcon} </span>
   {/if}
