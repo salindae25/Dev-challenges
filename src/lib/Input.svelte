@@ -7,11 +7,13 @@
   export let focus = false;
   export let disabled = false;
   export let label = "Label";
+  export let helperText = "";
   export let placeholder = "Placeholder";
   export let id = `input-${uuid()}`;
 </script>
 
 <div class="container">
+  <span class="help-text" class:error>{helperText}</span>
   <input
     {id}
     class="default pl-3 py-[18px] mt-1 placeholder:text-[#828282] font-Noto-sans font-medium"
@@ -29,6 +31,16 @@
   .container {
     @apply flex flex-col-reverse;
   }
+  .help-text {
+    margin-top: 4px;
+    font-size: 10px;
+    line-height: 14px;
+    color: hsla(0, 0%, 51%, 1);
+    @apply font-Noto-sans tracking-wide;
+    &.error {
+      color: #d32f2f;
+    }
+  }
   .default {
     min-width: 200px;
     font-size: 14px;
@@ -37,6 +49,8 @@
     border-radius: 8px;
     color: #333333;
     outline: none;
+    & ~ label {
+    }
     &.hover,
     &:hover {
       @apply border-[#333333];
@@ -58,6 +72,7 @@
     & ~ label {
       color: #d32f2f;
     }
+
     &.hover,
     &:hover {
       @apply border-[#333333];

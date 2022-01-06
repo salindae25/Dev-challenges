@@ -52,4 +52,18 @@
       <Input disabled />
     </article>
   </div>
+  <div class="grid grid-flow-col mt-7 gap-y-12 gap-x-12 justify-between">
+    <article class="flex flex-col gap-2">
+      <div class="font-ubuntu-mono text-xs">
+        {`<Input helperText="Some interesting text" />`}
+      </div>
+      <Input helperText="Some interesting text" />
+    </article>
+    <article class="flex flex-col gap-2">
+      <div class="font-ubuntu-mono text-xs">
+        {`<Input helperText="Some interesting text" error />`}
+      </div>
+      <Input helperText="Some interesting text" error />
+    </article>
+  </div>
 </div>
