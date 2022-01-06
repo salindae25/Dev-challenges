@@ -102,4 +102,12 @@
       <Input size="sm" />
     </article>
   </div>
+  <div class="grid grid-flow-col mt-7 gap-y-12 gap-x-12  w-full ">
+    <article class="flex flex-col gap-2  w-full ">
+      <div class="font-ubuntu-mono text-xs">
+        {`<Input fullWidth />`}
+      </div>
+      <Input fullWidth />
+    </article>
+  </div>
 </div>

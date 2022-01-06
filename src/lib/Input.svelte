@@ -5,6 +5,7 @@
   export let hover = false;
   export let focus = false;
   export let disabled = false;
+  export let fullWidth = false;
   export let label = "Label";
   export let helperText = "";
   export let startIcon = "";
@@ -15,7 +16,7 @@
   export let size = "md";
 </script>
 
-<div class="container relative">
+<div class="container relative" class:w-full={fullWidth}>
   <span class="help-text" class:error>{helperText}</span>
   <input
     {id}
@@ -28,6 +29,7 @@
     class:pr-10={endIcon !== ""}
     class:size-md={size === "md"}
     class:size-sm={size === "sm"}
+    class:w-full={fullWidth}
     {placeholder}
     {disabled}
     {value}
@@ -43,7 +45,7 @@
 
 <style lang="scss">
   .container {
-    @apply flex flex-col-reverse;
+    @apply flex flex-col-reverse w-fit;
   }
   .start__icon,
   .end__icon {
