@@ -11,6 +11,8 @@ const config = {
         Poppins: ["Poppins", "sans-serif"],
         "Noto-sans": ["Noto Sans JP", "sans-serif"],
         "ubuntu-mono": ["Ubuntu Mono", "sans-serif"],
+        Mulish: ["Mulish", "sans-serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
