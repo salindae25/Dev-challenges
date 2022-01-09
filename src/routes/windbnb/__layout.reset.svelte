@@ -14,12 +14,14 @@
 
   <slot />
 
-  <footer>
-    <!-- footer goes here  -->
+  <footer
+    class=" text-[#828282] flex justify-center my-4 font-Montserrat mt-auto"
+  >
+    <span>created by <b>salindae25</b> - devChallenges.io</span>
   </footer>
 </main>
 
 <style lang="scss">
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap");
 </style>

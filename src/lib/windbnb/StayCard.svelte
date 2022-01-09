@@ -13,11 +13,14 @@
   };
 </script>
 
-<div class="flex flex-col w-full  max-w-[395px] md:w-[calc(27.43vw)] ">
+<div
+  class="flex flex-col w-full  max-w-[395px] md:w-[395px] xl:w-[calc(27.43vw)] "
+>
   <img
     src={stay.photo}
     alt={stay.title}
-    class="w-full aspect-auto rounded-xl md:h-[269px] md:object-cover"
+    loading="lazy"
+    class="w-full aspect-auto rounded-xl h-[269px] object-cover"
   />
   <div class="flex w-full  items-center mt-[14px]">
     {#if stay.superHost}
@@ -27,7 +30,7 @@
       >
     {/if}
     <span class="text-[#828282] text-xs md:text-sm"
-      >{`${stay.type}, ${stay.beds} beds`}</span
+      >{`${stay.type}, ${stay.beds || 0} beds`}</span
     >
     <div class="flex items-center ml-auto">
       <span
