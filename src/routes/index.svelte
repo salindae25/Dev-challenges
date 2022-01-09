@@ -3,23 +3,34 @@
 </script>
 
 <script lang="ts">
+  import Card from "$lib/Card.svelte";
 </script>
 
 <svelte:head>
   <title>Home</title>
 </svelte:head>
 
-<div class="flex flex-col gap-4">
-  <span
-    >Go to buttons <a href="/buttons" class="font-bold underline cursor-pointer"
-      >Buttons</a
-    ></span
-  >
-  <span
-    >Go to inputs <a href="/inputs" class="font-bold underline cursor-pointer"
-      >Inputs</a
-    ></span
-  >
+<div class="flex mx-auto gap-5">
+  <a href="/frontend">
+    <Card
+      title="Frontend projects"
+      imagePath="/images/Frontend_thumb.svg"
+      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+    mollitia sapiente, blanditiis quam adipisci sint odio quisquam quas,
+    necessitatibus ullam voluptatibus totam eius reiciendis, qui eveniet.
+    Sit iste id numquam!"
+    />
+  </a>
+  <a href="/responsive">
+    <Card
+      title="Responsive projects"
+      imagePath="/images/Responsive_thumb.svg"
+      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+    mollitia sapiente, blanditiis quam adipisci sint odio quisquam quas,
+    necessitatibus ullam voluptatibus totam eius reiciendis, qui eveniet.
+    Sit iste id numquam!"
+    />
+  </a>
 </div>
 
 <style>

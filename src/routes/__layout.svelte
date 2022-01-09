@@ -2,24 +2,13 @@
   import "../app.css";
 </script>
 
-<main class="w-screen min-h-screen flex ">
-  <div
-    class="flex flex-col w-[237px] bg-nav-bg pl-[56px] pt-[48px] min-h-screen"
-  >
-    <div class="font-Poppins font-semibold">
-      <span class="text-red-500">Dev</span>challenges.io
-    </div>
-    <ul
-      class="mt-[122px] font-Noto-sans text-gray-400 text-sm flex flex-col gap-7"
+<main class="w-screen min-h-screen flex px-8 bg-gray-100">
+  <div class="flex flex-col w-full  gap-4">
+    <a href="/" class="mx-auto my-4"
+      ><h1 class="text-2xl font-Poppins font-semibold">
+        <span class="text-orange-600">Dev</span>Challenges.io
+      </h1></a
     >
-      <li>Colors</li>
-      <li>Typography</li>
-      <li>Spaces</li>
-      <li class="text-black">Buttons</li>
-      <li>Inputs</li>
-    </ul>
-  </div>
-  <div class="pt-[54px] px-[92px] pb-10">
     <slot />
   </div>
 </main>
