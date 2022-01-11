@@ -27,9 +27,9 @@
   });
 </script>
 
-<div class="flex flex-col font-Raleway w-full min-h-screen py-3 px-5">
+<div class="flex flex-col font-Raleway w-full min-h-screen py-4 px-5 ">
   <div
-    class="ml-auto flex items-center gap-1 text-sm cursor-pointer mb-[200px]"
+    class="ml-auto flex items-center gap-1 text-sm cursor-pointer mb-[200px] md:mr-[36px]"
     on:click={getRandomQuote}
   >
     random<span
@@ -40,7 +40,7 @@
     </span>
   </div>
   <div
-    class="flex flex-col w-full justify-center flex-grow-1 relative   gap-9"
+    class="flex flex-col w-full justify-center flex-grow-1 relative   gap-9 md:w-[614px] md:mx-auto"
     class:animate-pulse={dataLoading}
   >
     <Quote text={randomQuote?.quoteText} />

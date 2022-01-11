@@ -6,7 +6,7 @@
 </script>
 
 <div
-  class="border-l-4 border-yellow-400 pl-4 font-medium text-xl my-auto leading-normal"
+  class="border-l-4 border-yellow-400 pl-4 md:pl-[96px] font-medium text-xl my-auto leading-normal"
 >
   “{text}”
 </div>
