@@ -1,3 +1,15 @@
+# [1.0.0-develop.4](https://github.com/salindae25/Dev-challenges/compare/v1.0.0-develop.3...v1.0.0-develop.4) (2022-01-11)
+
+
+### Styles
+
+* 💄 [Random quote generator] add Desktop view port style ([aa26b88](https://github.com/salindae25/Dev-challenges/commit/aa26b88b11456ee82c41dc1907322adffeee4743))
+
+
+### BREAKING CHANGES
+
+* 🧨 author page heading
+
 # [1.0.0-develop.3](https://github.com/salindae25/Dev-challenges/compare/v1.0.0-develop.2...v1.0.0-develop.3) (2022-01-11)
 
 
