@@ -1,3 +1,11 @@
+# [1.0.0-develop.3](https://github.com/salindae25/Dev-challenges/compare/v1.0.0-develop.2...v1.0.0-develop.3) (2022-01-11)
+
+
+### Features
+
+* 🎸 [Random Quote Genarator] initial commit ([398c73a](https://github.com/salindae25/Dev-challenges/commit/398c73ae253d24a3ad940b2faab5631431fe1963))
+* 🎸 [Random quote generator] quote author othe quotes ([b9ebc12](https://github.com/salindae25/Dev-challenges/commit/b9ebc12d7eb043bbdf5af949b956a7a113295b6e))
+
 # [1.0.0-develop.2](https://github.com/salindae25/Dev-challenges/compare/v1.0.0-develop.1...v1.0.0-develop.2) (2022-01-11)
 
 
