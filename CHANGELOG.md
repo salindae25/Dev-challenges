@@ -1,3 +1,34 @@
+# 1.0.0 (2022-01-11)
+
+
+### Bug Fixes
+
+* 🐛 change the 'package.json' and added hook file ([5555d46](https://github.com/salindae25/Dev-challenges/commit/5555d463a4af8e9028a4dd795b414f13cab881bd))
+* **ci:** fixed npm version ([3b47b71](https://github.com/salindae25/Dev-challenges/commit/3b47b71c71a7466cee56a4464a7ae1512f5a7d31))
+
+
+### Features
+
+* [Random quote generator] ([137799f](https://github.com/salindae25/Dev-challenges/commit/137799f0c876d5dec6b30203ad5ba027b7765cf4))
+* 🎸 [Random Quote Genarator] initial commit ([398c73a](https://github.com/salindae25/Dev-challenges/commit/398c73ae253d24a3ad940b2faab5631431fe1963))
+* 🎸 [Random quote generator] quote author othe quotes ([b9ebc12](https://github.com/salindae25/Dev-challenges/commit/b9ebc12d7eb043bbdf5af949b956a7a113295b6e))
+* **ci:** added versioning to workflow ([5a602a9](https://github.com/salindae25/Dev-challenges/commit/5a602a9eaf0ccac478484195158c34e725fdb676))
+
+
+### Performance Improvements
+
+* ⚡️ removed unused folder ([7febd87](https://github.com/salindae25/Dev-challenges/commit/7febd877d3f143609a5d2f3e56f5ca1181b09d16))
+
+
+### Styles
+
+* 💄 [Random quote generator] add Desktop view port style ([aa26b88](https://github.com/salindae25/Dev-challenges/commit/aa26b88b11456ee82c41dc1907322adffeee4743))
+
+
+### BREAKING CHANGES
+
+* 🧨 author page heading
+
 # [1.0.0-develop.4](https://github.com/salindae25/Dev-challenges/compare/v1.0.0-develop.3...v1.0.0-develop.4) (2022-01-11)
 
 ### Styles
