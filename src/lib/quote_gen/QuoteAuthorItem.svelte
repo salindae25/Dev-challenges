@@ -5,7 +5,7 @@
 
 <a
   href="/quote/{name}"
-  class="flex hover:bg-slate-700 w-full py-5 justify-between items-center pr-4 transition-all ease-in duration-200 group "
+  class="flex hover:bg-[#333333] w-full py-5 md:py-[30px] md:px-[29px]  md:ml-[70px] justify-between items-center pr-4 transition-all ease-in duration-200 group "
   ><div class=" flex flex-col pl-5 text-[#4F4F4F] gap-1 group-hover:text-white">
     <h3 class="text-xl font-bold">{name}</h3>
     <span class="text-xs">{genre}</span>
