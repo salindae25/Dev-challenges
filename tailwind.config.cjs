@@ -13,6 +13,7 @@ const config = {
         "ubuntu-mono": ["Ubuntu Mono", "sans-serif"],
         Mulish: ["Mulish", "sans-serif"],
         Montserrat: ["Montserrat", "sans-serif"],
+        Raleway: ["Raleway", "sans-serif"],
       },
     },
   },
