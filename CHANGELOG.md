@@ -1,3 +1,10 @@
+## [1.0.1-develop.2](https://github.com/salindae25/Dev-challenges/compare/v1.0.1-develop.1...v1.0.1-develop.2) (2022-01-17)
+
+
+### Bug Fixes
+
+* 🐛 image broken link fixed ([1c8d2be](https://github.com/salindae25/Dev-challenges/commit/1c8d2be10064469eaba9b98eb7e86a95e86000e8))
+
 ## [1.0.1-develop.1](https://github.com/salindae25/Dev-challenges/compare/v1.0.0...v1.0.1-develop.1) (2022-01-17)
 
 
