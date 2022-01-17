@@ -1,3 +1,10 @@
+## [1.0.1-develop.1](https://github.com/salindae25/Dev-challenges/compare/v1.0.0...v1.0.1-develop.1) (2022-01-17)
+
+
+### Bug Fixes
+
+* 🐛 build error fix ([f6ef201](https://github.com/salindae25/Dev-challenges/commit/f6ef20165798321303bd2991b019c8366540631c))
+
 # 1.0.0 (2022-01-11)
 
 
