@@ -1,3 +1,10 @@
+## [1.0.2-develop.2](https://github.com/salindae25/Dev-challenges/compare/v1.0.2-develop.1...v1.0.2-develop.2) (2022-01-17)
+
+
+### Bug Fixes
+
+* 🐛 broken page link fixed ([fe0d266](https://github.com/salindae25/Dev-challenges/commit/fe0d266179de5241f5fe0df496a28130848be2f6))
+
 ## [1.0.2-develop.1](https://github.com/salindae25/Dev-challenges/compare/v1.0.1...v1.0.2-develop.1) (2022-01-17)
 
 
