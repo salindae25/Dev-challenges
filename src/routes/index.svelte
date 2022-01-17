@@ -14,7 +14,7 @@
   <a href="/frontend">
     <Card
       title="Frontend projects"
-      imagePath="/images/Frontend_thumb.svg"
+      imagePath="/Images/Frontend_thumb.svg"
       description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
     mollitia sapiente, blanditiis quam adipisci sint odio quisquam quas,
     necessitatibus ullam voluptatibus totam eius reiciendis, qui eveniet.
@@ -24,7 +24,7 @@
   <a href="/responsive">
     <Card
       title="Responsive projects"
-      imagePath="/images/Responsive_thumb.svg"
+      imagePath="/Images/Responsive_thumb.svg"
       description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
     mollitia sapiente, blanditiis quam adipisci sint odio quisquam quas,
     necessitatibus ullam voluptatibus totam eius reiciendis, qui eveniet.
