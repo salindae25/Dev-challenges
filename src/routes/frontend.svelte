@@ -39,4 +39,11 @@
       description="Famous quotes can be a great source of motivation. This challenge is all about quotes. "
     />
   </a>
+  <a href="/country-quiz">
+    <Card
+      title="Country quiz"
+      imagePath="https://devchallenges.io/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fdevchallenges-1234.appspot.com%2Fo%2FchallengesDesigns%252FcountryQuizThumbnail.png%3Falt%3Dmedia%26token%3D761f3109-120d-4111-96b3-98ef934281b6&w=750&q=75"
+      description="If you want to learn more about countries, this challenge is perfect for you."
+    />
+  </a>
 </div>
