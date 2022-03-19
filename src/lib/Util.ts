@@ -42,3 +42,6 @@ export function randomListWithRepeatOption(list: any[], length: number, allowRep
   }
   return resultList;
 }
+export function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
