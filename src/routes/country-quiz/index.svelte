@@ -2,15 +2,12 @@
   import QuestionView from "$lib/country_quiz/QuestionView.svelte";
   import { onMount } from "svelte";
   import { randomList, randomListWithRepeatOption, randomSelect, sleep } from "$lib/Util";
-  import { countries } from "$lib/country_quiz/country_store";
-  let lc = $countries;
+  import { countries, loadCountries } from "$lib/country_quiz/country_store";
 
+  let lc = [];
   onMount(async () => {
-    if (lc) return;
-    const response = await fetch("https://restcountries.com/v2/all?fields=name,capital,flags");
-    const data = await response.json();
-    localStorage.setItem("COUNTRY_DATA", JSON.stringify(data));
-    return;
+    await loadCountries();
+    lc = $countries;
   });
   let activeQuestionIndex = 0;
   let correctCount = 0;
@@ -27,11 +24,11 @@
     image: "/Images/undraw_adventure_4hum 1.svg",
     isCorrect: false,
   };
-  function generateQuestions() {
+  function generateQuestions(lc) {
     const questionSetType = randomList(["map", "capital"], 10);
     const optionLabel = ["a", "b", "c", "d"];
     let localCountries = [...lc];
-    return questionSetType.map((type) => {
+    const data = questionSetType.map((type) => {
       const selectCountry = randomSelect(localCountries);
       localCountries = localCountries.filter((x) => x.name != selectCountry.name);
       const title = type == "capital" ? `${selectCountry?.capital} is the capital of` : `Which country does this flag belong to?`;
@@ -49,6 +46,9 @@
         visible: false,
       };
     });
+    data[activeQuestionIndex].visible = true;
+
+    return data;
   }
 
   async function processAnswer(isCorrect) {
@@ -57,25 +57,27 @@
     questionSet[activeQuestionIndex].visible = false;
 
     activeQuestionIndex += 1;
+
     if (activeQuestionIndex == questionSet.length) {
       showResults = true;
+      console.log("set");
+
       return;
     }
 
     questionSet[activeQuestionIndex].visible = true;
   }
   const tryAgain = () => {
-    questionSet = generateQuestions();
-
     activeQuestionIndex = 0;
-    questionSet[activeQuestionIndex].visible = true;
+    questionSet = generateQuestions(lc);
 
     correctCount = 0;
     showResults = false;
   };
-
-  let questionSet = generateQuestions();
-  questionSet[activeQuestionIndex].visible = true;
+  let questionSet = [];
+  $: {
+    questionSet = generateQuestions(lc);
+  }
 </script>
 
 <div class="w-[380px] flex my-auto mx-auto justify-center flex-col gap-3 mt-[100px] font-Poppins">
