@@ -15,9 +15,6 @@
   function optionSelect(option, q) {
     selectedOption = option;
   }
-  $: {
-    console.log(question);
-  }
 </script>
 
 <!-- question type image -->

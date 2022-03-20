@@ -57,7 +57,6 @@
     questionSet[activeQuestionIndex].visible = false;
 
     activeQuestionIndex += 1;
-    console.log({ activeQuestionIndex, length: questionSet.length });
 
     if (activeQuestionIndex == questionSet.length) {
       showResults = true;
