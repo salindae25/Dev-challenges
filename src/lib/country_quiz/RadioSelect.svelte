@@ -13,8 +13,8 @@
 <div>
   <input type="radio" {id} {value} {name} class="hidden radio-input" on:change|preventDefault={onOptionSelect} />
   <label for={id} class={`default ${correctChoice ? "bg-green-600" : ""} ${wrongChoice ? "bg-red-400" : ""}`} class:select={isSelected} class:correct={correctChoice}>
-    <span class="text-xl leading-6 uppercase">{value}</span>
-    <span class="text-lg">{displayLabel}</span>
+    <span class="text-lg leading-3 uppercase">{value}</span>
+    <span class="text-base truncate">{displayLabel}</span>
   </label>
 </div>
 

@@ -3,18 +3,7 @@
   export let handleNext = (s) => {};
   let selectedOption = null;
   let isLoading = false;
-  export let question = {
-    type: "capital",
-    title: "Kuala Lumpur is the capital of",
-    options: [
-      { text: "Vietnam", label: "a" },
-      { text: "Finland", label: "b" },
-      { text: "Sweden", label: "c" },
-      { text: "Austria", label: "d" },
-    ],
-    image: "/Images/undraw_adventure_4hum 1.svg",
-    isCorrect: false,
-  };
+  export let question = {};
   let processed = false;
   function onNext() {
     question.isCorrect = selectedOption.text == question?.answer;
