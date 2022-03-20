@@ -33,7 +33,7 @@
     let localCountries = [...lc];
     return questionSetType.map((type) => {
       const selectCountry = randomSelect(localCountries);
-      localCountries = localCountries.filter((x) => x.name == selectCountry.name);
+      localCountries = localCountries.filter((x) => x.name != selectCountry.name);
       const title = type == "capital" ? `${selectCountry?.capital} is the capital of` : `Which country does this flag belong to?`;
       const answer = selectCountry?.name;
       const optionCountry = randomListWithRepeatOption([...randomListWithRepeatOption(localCountries, 3, false), selectCountry], 4, false);
