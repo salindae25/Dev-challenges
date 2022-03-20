@@ -28,15 +28,15 @@
     isCorrect: false,
   };
   function generateQuestions() {
-    const questionSetType = randomList(["map", "capital"], 2);
+    const questionSetType = randomList(["map", "capital"], 10);
     const optionLabel = ["a", "b", "c", "d"];
-
+    let localCountries = [...lc];
     return questionSetType.map((type) => {
-      const selectCountry = randomSelect(lc);
-
+      const selectCountry = randomSelect(localCountries);
+      localCountries = localCountries.filter((x) => x.name == selectCountry.name);
       const title = type == "capital" ? `${selectCountry?.capital} is the capital of` : `Which country does this flag belong to?`;
       const answer = selectCountry?.name;
-      const optionCountry = randomListWithRepeatOption([...randomListWithRepeatOption(lc, 3, false), selectCountry], 4, false);
+      const optionCountry = randomListWithRepeatOption([...randomListWithRepeatOption(localCountries, 3, false), selectCountry], 4, false);
 
       const options = optionCountry.map((x, i) => ({ text: x?.name, label: optionLabel[i] }));
       return {
