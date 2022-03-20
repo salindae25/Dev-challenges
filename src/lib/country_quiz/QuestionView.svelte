@@ -21,7 +21,10 @@
 </script>
 
 <!-- question type image -->
-<img src={question?.image} class={` w-auto absolute  right-3 ${question.type != "capital" ? "h-[90px] -top-[70px]" : "h-[116px] -top-20"}`} alt="adveture quiz" />
+<img src="/Images/undraw_adventure_4hum 1.svg" class={` w-auto absolute  right-3 ${question.type != "capital" ? "h-[90px] -top-[70px]" : "h-[116px] -top-20"}`} alt="adveture quiz" />
+{#if question?.type == "flag"}
+  <img src={question?.image} class="h-[80px] object-contain mb-4 self-start" />
+{/if}
 <!-- question title -->
 <h3 class="font-bold text-2xl text-[#2F527B] tracking-tight">
   {question.title}
