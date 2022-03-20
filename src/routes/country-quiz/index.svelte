@@ -28,7 +28,7 @@
     const questionSetType = randomList(["map", "capital"], 10);
     const optionLabel = ["a", "b", "c", "d"];
     let localCountries = [...lc];
-    return questionSetType.map((type) => {
+    const data = questionSetType.map((type) => {
       const selectCountry = randomSelect(localCountries);
       localCountries = localCountries.filter((x) => x.name != selectCountry.name);
       const title = type == "capital" ? `${selectCountry?.capital} is the capital of` : `Which country does this flag belong to?`;
@@ -46,6 +46,9 @@
         visible: false,
       };
     });
+    data[activeQuestionIndex].visible = true;
+
+    return data;
   }
 
   async function processAnswer(isCorrect) {
@@ -54,18 +57,20 @@
     questionSet[activeQuestionIndex].visible = false;
 
     activeQuestionIndex += 1;
+    console.log({ activeQuestionIndex, length: questionSet.length });
+
     if (activeQuestionIndex == questionSet.length) {
       showResults = true;
+      console.log("set");
+
       return;
     }
 
     questionSet[activeQuestionIndex].visible = true;
   }
   const tryAgain = () => {
-    questionSet = generateQuestions(lc);
-
     activeQuestionIndex = 0;
-    questionSet[activeQuestionIndex].visible = true;
+    questionSet = generateQuestions(lc);
 
     correctCount = 0;
     showResults = false;
@@ -73,7 +78,6 @@
   let questionSet = [];
   $: {
     questionSet = generateQuestions(lc);
-    questionSet[activeQuestionIndex].visible = true;
   }
 </script>
 
