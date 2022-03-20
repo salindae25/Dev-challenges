@@ -2,6 +2,10 @@
   import "../../app.css";
 </script>
 
+<svelte:head>
+  <meta name="description" content="DevChallengs using Svelte" />
+  <link rel="icon" href="/devchallenges.png" />
+</svelte:head>
 <main class="w-screen min-h-screen flex ">
   <div
     class="flex flex-col w-[237px] bg-nav-bg pl-[56px] pt-[48px] min-h-screen"
